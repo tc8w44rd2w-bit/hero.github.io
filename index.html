@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Index — Your Name / Studio</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Your Name / Studio</a>
+    <nav class="menu">
+      <a data-nav href="gallery.html">Gallery</a>
+      <a data-nav href="index.html">Index</a>
+      <a data-nav href="studio.html">Studio</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="page-title">Index</p>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th class="col-project">Project</th>
+        <th class="col-cat">Category</th>
+        <th class="col-loc">Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="project.html?slug=project-01">Project 01</a></td>
+        <td>Research / Field</td>
+        <td>Copenhagen</td>
+      </tr>
+      <tr>
+        <td><a href="project.html?slug=project-02">Project 02</a></td>
+        <td>Writing</td>
+        <td>MENA</td>
+      </tr>
+      <tr>
+        <td><a href="project.html?slug=project-03">Project 03</a></td>
+        <td>Teaching</td>
+        <td>KP / DIIS</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="footer">© <span id="y"></span> Your Name</div>
+</main>
+
+<script>
+document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+<script src="assets/site.js"></script>
+</body>
+</html>
