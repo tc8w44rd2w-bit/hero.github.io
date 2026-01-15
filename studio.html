@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Studio — Your Name / Studio</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Your Name / Studio</a>
+    <nav class="menu">
+      <a data-nav href="gallery.html">Gallery</a>
+      <a data-nav href="index.html">Index</a>
+      <a data-nav href="studio.html">Studio</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="page-title">Studio</p>
+
+  <div class="prose">
+    <h2>About</h2>
+    <p>
+      A short, restrained statement about what you do and what your work is concerned with.
+      Clear, factual, no promotion language.
+    </p>
+
+    <h2>Focus</h2>
+    <ul>
+      <li>Research on conflict, governance, and non-state actors</li>
+      <li>Field-based and policy-oriented analysis</li>
+      <li>Teaching and professional training</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p><a href="mailto:you@yourdomain.com">you@yourdomain.com</a></p>
+  </div>
+
+  <div class="footer">© <span id="y"></span> Your Name</div>
+</main>
+
+<script>
+document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+<script src="assets/site.js"></script>
+</body>
+</html>
