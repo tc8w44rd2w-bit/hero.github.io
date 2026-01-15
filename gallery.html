@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery — Your Name / Studio</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Your Name / Studio</a>
+    <nav class="menu">
+      <a data-nav href="gallery.html">Gallery</a>
+      <a data-nav href="index.html">Index</a>
+      <a data-nav href="studio.html">Studio</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="page-title">Gallery</p>
+
+  <section class="grid">
+    <a class="card" href="project.html?slug=project-01">
+      <img class="thumb" src="assets/images/p1.jpg" alt="">
+      <div class="caption"><b>Project 01</b><span>2026</span></div>
+    </a>
+
+    <a class="card" href="project.html?slug=project-02">
+      <img class="thumb" src="assets/images/p2.jpg" alt="">
+      <div class="caption"><b>Project 02</b><span>2026</span></div>
+    </a>
+
+    <a class="card" href="project.html?slug=project-03">
+      <img class="thumb" src="assets/images/p3.jpg" alt="">
+      <div class="caption"><b>Project 03</b><span>2025</span></div>
+    </a>
+  </section>
+
+  <div class="footer">© <span id="y"></span> Your Name</div>
+</main>
+
+<script>
+document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+<script src="assets/site.js"></script>
+</body>
+</html>
